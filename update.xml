@@ -1,0 +1,11 @@
+﻿<?xml version="1.0"?>
+<sharpUpdate>
+  <update appID="BaroChecklist">
+    <version>2.0.0.0</version>
+    <url></url>
+    <fileName>BaroChecklist</fileName>
+    <md5></md5>
+    <description>Day 1 Update\n-Just a new line test</description>
+    <launchArgs></launchArgs>
+  </update>
+</sharpUpdate>
