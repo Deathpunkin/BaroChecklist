@@ -399,7 +399,7 @@ namespace BaroChecklist
 
         public Uri UpdateXmlLocation
         {
-            get { return new Uri(""); }
+            get { return new Uri("https://github.com/Deathpunkin/BaroChecklist/blob/master/update.xml"); }
         }
 
         public Form Context
