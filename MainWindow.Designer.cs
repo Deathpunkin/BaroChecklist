@@ -31,15 +31,16 @@ namespace BaroChecklist
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.costsGroup = new System.Windows.Forms.GroupBox();
+            this.creditsIcon = new System.Windows.Forms.PictureBox();
             this.creditsCost = new System.Windows.Forms.Label();
             this.ducatsCost = new System.Windows.Forms.Label();
+            this.ducatsIcon = new System.Windows.Forms.PictureBox();
             this.filterBox = new System.Windows.Forms.TextBox();
             this.filterTextTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.Checklist = new BaroChecklist.TreeViewExtension();
             this.versionText = new System.Windows.Forms.TextBox();
-            this.creditsIcon = new System.Windows.Forms.PictureBox();
-            this.ducatsIcon = new System.Windows.Forms.PictureBox();
             this.itemPicture = new System.Windows.Forms.PictureBox();
             this.updateButton = new System.Windows.Forms.Button();
             this.costsGroup.SuspendLayout();
@@ -62,6 +63,16 @@ namespace BaroChecklist
             this.costsGroup.TabStop = false;
             this.costsGroup.Text = "Costs";
             // 
+            // creditsIcon
+            // 
+            this.creditsIcon.Image = global::BaroChecklist.Properties.Resources.Image_Credits_Large;
+            this.creditsIcon.Location = new System.Drawing.Point(6, 77);
+            this.creditsIcon.Name = "creditsIcon";
+            this.creditsIcon.Size = new System.Drawing.Size(54, 50);
+            this.creditsIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.creditsIcon.TabIndex = 2;
+            this.creditsIcon.TabStop = false;
+            // 
             // creditsCost
             // 
             this.creditsCost.AutoSize = true;
@@ -81,6 +92,16 @@ namespace BaroChecklist
             this.ducatsCost.Size = new System.Drawing.Size(74, 39);
             this.ducatsCost.TabIndex = 1;
             this.ducatsCost.Text = "N/A";
+            // 
+            // ducatsIcon
+            // 
+            this.ducatsIcon.Image = global::BaroChecklist.Properties.Resources.Image_Ducats;
+            this.ducatsIcon.Location = new System.Drawing.Point(6, 19);
+            this.ducatsIcon.Name = "ducatsIcon";
+            this.ducatsIcon.Size = new System.Drawing.Size(54, 52);
+            this.ducatsIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ducatsIcon.TabIndex = 0;
+            this.ducatsIcon.TabStop = false;
             // 
             // filterBox
             // 
@@ -114,26 +135,6 @@ namespace BaroChecklist
             this.versionText.TabIndex = 4;
             this.versionText.Text = "Version";
             this.versionText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // creditsIcon
-            // 
-            this.creditsIcon.Image = global::BaroChecklist.Properties.Resources.Image_Credits_Large;
-            this.creditsIcon.Location = new System.Drawing.Point(6, 77);
-            this.creditsIcon.Name = "creditsIcon";
-            this.creditsIcon.Size = new System.Drawing.Size(54, 50);
-            this.creditsIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.creditsIcon.TabIndex = 2;
-            this.creditsIcon.TabStop = false;
-            // 
-            // ducatsIcon
-            // 
-            this.ducatsIcon.Image = global::BaroChecklist.Properties.Resources.Image_Ducats;
-            this.ducatsIcon.Location = new System.Drawing.Point(6, 19);
-            this.ducatsIcon.Name = "ducatsIcon";
-            this.ducatsIcon.Size = new System.Drawing.Size(54, 52);
-            this.ducatsIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ducatsIcon.TabIndex = 0;
-            this.ducatsIcon.TabStop = false;
             // 
             // itemPicture
             // 
@@ -170,6 +171,7 @@ namespace BaroChecklist
             this.Controls.Add(this.itemPicture);
             this.Controls.Add(this.Checklist);
             this.ForeColor = System.Drawing.SystemColors.Control;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainWindow";
             this.Text = "Baro Checklist";
             this.costsGroup.ResumeLayout(false);
