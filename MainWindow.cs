@@ -399,7 +399,7 @@ namespace BaroChecklist
 
         public Uri UpdateXmlLocation
         {
-            get { return new Uri("https://github.com/Deathpunkin/BaroChecklist/blob/master/update.xml"); }
+            get { return new Uri("https://raw.githubusercontent.com/Deathpunkin/BaroChecklist/master/update.xml"); }
         }
 
         public Form Context
@@ -738,6 +738,7 @@ namespace BaroChecklist
         {
             SharpUpdater updater = new SharpUpdater(this);
             updater.DoUpdate();
+            Console.WriteLine("UpdateClicked");
         }
     }
 }
