@@ -2,7 +2,7 @@
 <sharpUpdate>
   <update appID="BaroChecklist">
     <version>2.0.0.0</version>
-    <url>https://github.com/Deathpunkin/BaroChecklist/raw/master/bin/Release/BaroChecklist.exe</url>
+    <url>https://raw.githubusercontent.com/Deathpunkin/BaroChecklist/master/bin/Release/BaroChecklist.exe</url>
     <fileName>BaroChecklist.exe</fileName>
     <md5>6b4bc568e7a6a219bc8f8b0cfc3a793c</md5>
     <description>Day 1 Update\n-Just a new line test</description>
